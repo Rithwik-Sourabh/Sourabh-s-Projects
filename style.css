@@ -159,13 +159,12 @@ section.services .card-grid .card{
     text-align: center;
     position: relative;;
 }
-section.services .card-grid .card img{
+section.services .card-grid .card i{
     position: absolute;
     top: -1.3rem;
     left: 50%;
     transform: translateX(-50%);
 }
-/* ...existing code... */
 
 @media (max-width: 1200px) {
     header nav {
@@ -309,8 +308,32 @@ section.services .card-grid {
 }
 
 /* Make images responsive */
-img {
+img{
     max-width: 100%;
     height: auto;
     display: block;
+}
+i{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 40px;
+    background: #00171F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #003459;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #007EA7;
+}
+
+* {
+    scrollbar-width:auto;
+    scrollbar-color: #003459 #00171F;
 }

@@ -337,3 +337,13 @@ i{
     scrollbar-width:auto;
     scrollbar-color: #003459 #00171F;
 }
+i {
+  cursor: pointer;
+  color: #ff4d4d;
+  transition: transform 0.2s;
+}
+
+i:hover {
+  transform: scale(1.2);
+  color: #e60000;
+}

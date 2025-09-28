@@ -246,3 +246,71 @@ img, .container, .card {
     height: auto;
     box-sizing: border-box;
 }
+/* ...existing code... */
+
+/* Make flex containers wrap on small screens */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Responsive adjustments for .container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Responsive card grid */
+section.services .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    section.services .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero,
+    .about .container {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+    .hero .left img,
+    .about .left img {
+        width: 100% !important;
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+    section.services .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        width: 100%;
+        padding: 0.75rem 0;
+    }
+    header nav .left {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav .logo {
+        margin-bottom: 1rem;
+    }
+    .about .container {
+        padding: 0 5px;
+    }
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

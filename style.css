@@ -33,7 +33,7 @@ header nav{
 }
 header nav .logo{
     margin-right: 3rem;
-    margin-top: -1rem;
+    margin-top: -1.5rem;
     font-size: 50px;
 }
 .hero{
@@ -89,7 +89,7 @@ header nav .logo{
 section.about{
     background-color: var(--bglight);
     padding: 6rem;
-     background: linear-gradient(#003459, #00171F)
+    background: linear-gradient(#003459, #00171F)
 }
 section .right{
     margin-left:10rem;
